@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem;
+}
+
+form {
+  width: 30%;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 2rem;
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 0.3rem;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.candidates-container {
+  width: 30%;
+  border: 2px solid #333;
+  padding: 0 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    margin: 1rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .candidates-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>search</title>
+    <link rel="stylesheet" type="text/css" href="liststyle.css" />
+  </head>
+  <body>
+    <!-- Search Form -->
+    <form id="candidate-search-form" action="#">
+      <div class="field">
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Enter location" />
+      </div>
+      <div class="field">
+        <label for="job-role">Job Role:</label>
+        <input type="text" id="job-role" placeholder="Enter job role" />
+      </div>
+      <button type="submit" id="submit-button">Search</button>
+    </form>
+
+    <!-- Candidate List -->
+    <div id="candidate-list" class="candidates-container">
+      <h2>Candidates</h2>
+      <ul id="candidates"></ul>
+    </div>
+  </body>
+  <script src="list.js"></script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Company Login</title>
+    <link rel="stylesheet" type="text/css" href="signupstyle.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <header>
+        <h1>Company Login</h1>
+      </header>
+      <div class="sub-container">
+        <section class="login-section section">
+          <div class="container">
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required />
+
+              <button type="submit" class="button" id="login-button">
+                Login
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <section class="register-section section">
+          <div class="container">
+            <h2>Create an Account</h2>
+            <form action="register.php" method="POST">
+              <label for="company-name">Company Name:</label>
+              <input
+                type="text"
+                id="company-name"
+                name="company-name"
+                required
+              />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required />
+
+              <button type="submit" class="button" id="register-button">
+                Register
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Company Recruitment Solution. All rights reserved.</p>
+    </footer>
+  </body>
+  <script src="signup.js"></script>
+</html>

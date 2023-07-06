@@ -1,0 +1,206 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-button {
+  color: white;
+  text-decoration: none;
+  margin-right: 2rem;
+  border: 1px solid white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.hero {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10rem;
+}
+
+.hero-content {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero a {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Features section */
+.features-section {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.features-section h2 {
+  margin-bottom: 30px;
+}
+
+.feature {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+}
+
+/* Benefits section */
+.benefits-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.benefits-section h2 {
+  margin-bottom: 30px;
+}
+
+.benefit {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit i {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.benefit h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.benefit p {
+  font-size: 16px;
+}
+
+.benefits-section .container,
+.features-section .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    padding: 1rem 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-button {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  .hero {
+    padding: 1rem;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero a {
+    font-size: 1rem;
+  }
+
+  .benefits-section .container,
+  .features-section .container {
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}
