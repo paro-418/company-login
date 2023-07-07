@@ -1,12 +1,8 @@
 /* Reset some default styles */
-body,
-h1,
-h2,
-p,
-label,
-input {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {

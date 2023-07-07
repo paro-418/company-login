@@ -7,24 +7,46 @@
     <link rel="stylesheet" type="text/css" href="liststyle.css" />
   </head>
   <body>
+    <header>
+      <h1>Search candidates</h1>
+    </header>
     <!-- Search Form -->
-    <form id="candidate-search-form" action="#">
-      <div class="field">
-        <label for="location">Location:</label>
-        <input type="text" id="location" placeholder="Enter location" />
-      </div>
-      <div class="field">
-        <label for="job-role">Job Role:</label>
-        <input type="text" id="job-role" placeholder="Enter job role" />
-      </div>
-      <button type="submit" id="submit-button">Search</button>
-    </form>
+    <div class="form-container">
+      <form id="candidate-search-form" action="#">
+        <div class="field">
+          <label for="location">Location:</label>
+          <select id="location" name="location">
+            <option value="">choose location</option>
+            <option value="delhi">delhi</option>
+            <option value="jamshedpur">jamshedpur</option>
+            <option value="ranchi">ranchi</option>
+            <option value="giridih">giridih</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="job-role">Job Role:</label>
+          <select id="job-role" name="job-role">
+            <option value="">choose role</option>
+            <option value="frontend developer">frontend developer</option>
+            <option value="backend developer">backend developer</option>
+            <option value="python developer">python developer</option>
+            <option value="java developer">java developer</option>
+          </select>
+        </div>
+        <button type="submit" id="submit-button">Search</button>
+      </form>
 
-    <!-- Candidate List -->
-    <div id="candidate-list" class="candidates-container">
-      <h2>Candidates</h2>
-      <ul id="candidates"></ul>
+      <!-- Candidate List -->
+      <div id="candidate-list" class="candidates-container">
+        <h2>Candidates</h2>
+        <ol id="candidates"></ol>
+      </div>
     </div>
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Online Recruitment Solution. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
   <script src="list.js"></script>
 </html>

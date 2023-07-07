@@ -1,13 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
+  font-family: Arial, sans-serif;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 2rem;
-  margin: 3rem;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.form-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 form {
-  width: 30%;
+  width: 100%;
   gap: 2rem;
   display: flex;
   flex-direction: column;
@@ -29,7 +62,7 @@ label {
   font-weight: bold;
 }
 
-input {
+select {
   width: 100%;
   padding: 0.3rem;
 }
@@ -43,17 +76,47 @@ button {
 }
 
 .candidates-container {
-  width: 30%;
+  width: 100%;
   border: 2px solid #333;
   padding: 0 2rem;
 }
 
-@media only screen and (max-width: 500px) {
-  body {
-    margin: 1rem;
-  }
+.name-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  form {
+.candidate {
+  margin: 0.5rem 0;
+  border-bottom: 1px solid #696969;
+  padding-bottom: 0.5rem;
+}
+.name {
+  text-transform: capitalize;
+}
+.location {
+  color: #6a6a6a;
+  text-transform: capitalize;
+}
+.role {
+  text-transform: capitalize;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 500px) {
+  .form-container {
     width: 100%;
   }
 
